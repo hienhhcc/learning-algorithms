@@ -1,22 +1,16 @@
 function coinChange(coins: number[], amount: number): number {
-  let result = -1;
+  const dp = Array.from({ length: amount + 1 }, () => amount + 1);
+  dp[0] = 0;
 
-  function helper(currSum: number, currDepth: number) {
-    if (currSum === amount) {
-      if (result === -1) result = currDepth;
-      else result = Math.min(result, currDepth);
-      return;
-    }
-    if (currSum > amount) return;
-
-    for (let i = 0; i < coins.length; i++) {
-      helper(currSum + coins[i], currDepth + 1);
+  for (let i = 1; i <= amount; i++) {
+    for (const c of coins) {
+      if (i - c >= 0) {
+        dp[i] = Math.min(dp[i], 1 + dp[i - c]);
+      }
     }
   }
 
-  helper(0, 0);
-
-  return result;
+  return dp[amount] === amount + 1 ? -1 : dp[amount];
 }
 
 console.log(coinChange([1, 2, 5], 11));
