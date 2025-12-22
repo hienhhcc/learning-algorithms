@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function addTwoNumbers(
   l1: ListNode | null,
@@ -23,8 +23,13 @@ function addTwoNumbers(
   return dummy.next;
 }
 
-console.log(addTwoNumbers(arrayToList([2, 4, 3]), arrayToList([5, 6, 4])));
-console.log(addTwoNumbers(arrayToList([0]), arrayToList([0])));
 console.log(
-  addTwoNumbers(arrayToList([9, 9, 9, 9, 9, 9, 9]), arrayToList([9, 9, 9, 9]))
+  addTwoNumbers(arrayToLinkedList([2, 4, 3]), arrayToLinkedList([5, 6, 4]))
+);
+console.log(addTwoNumbers(arrayToLinkedList([0]), arrayToLinkedList([0])));
+console.log(
+  addTwoNumbers(
+    arrayToLinkedList([9, 9, 9, 9, 9, 9, 9]),
+    arrayToLinkedList([9, 9, 9, 9])
+  )
 );

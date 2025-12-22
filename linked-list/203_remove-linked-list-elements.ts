@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function removeElements(head: ListNode | null, val: number): ListNode | null {
   const dummy = new ListNode(0, head);
@@ -17,6 +17,6 @@ function removeElements(head: ListNode | null, val: number): ListNode | null {
   return dummy.next;
 }
 
-console.log(removeElements(arrayToList([1, 2, 6, 3, 4, 5, 6]), 6));
+console.log(removeElements(arrayToLinkedList([1, 2, 6, 3, 4, 5, 6]), 6));
 // console.log(removeElements(arrayToList([]), 1));
 // console.log(removeElements(arrayToList([7, 7, 7, 7]), 7));

@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function partition(head: ListNode | null, x: number): ListNode | null {
   let left = new ListNode(),
@@ -23,6 +23,6 @@ function partition(head: ListNode | null, x: number): ListNode | null {
   return left.next;
 }
 
-console.log(partition(arrayToList([1, 4, 3, 2, 5, 2]), 3));
-console.log(partition(arrayToList([2, 1]), 2));
+console.log(partition(arrayToLinkedList([1, 4, 3, 2, 5, 2]), 3));
+console.log(partition(arrayToLinkedList([2, 1]), 2));
 1;

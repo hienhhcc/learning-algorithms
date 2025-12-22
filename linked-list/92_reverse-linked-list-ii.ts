@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function reverseBetween(
   head: ListNode | null,
@@ -44,4 +44,4 @@ function reverseBetween(
 
 // console.log(reverseBetween(arrayToList([1, 2, 3, 4, 5]), 2, 4));
 // console.log(reverseBetween(arrayToList([5]), 1, 1));
-console.log(reverseBetween(arrayToList([3, 5]), 1, 2));
+console.log(reverseBetween(arrayToLinkedList([3, 5]), 1, 2));

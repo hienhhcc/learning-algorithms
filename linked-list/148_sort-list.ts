@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function sortList(head: ListNode | null): ListNode | null {
   const arr: number[] = [];
@@ -20,6 +20,6 @@ function sortList(head: ListNode | null): ListNode | null {
   return head;
 }
 
-console.log(sortList(arrayToList([4, 2, 1, 3])));
-console.log(sortList(arrayToList([-1, 5, 3, 4, 0])));
-console.log(sortList(arrayToList([])));
+console.log(sortList(arrayToLinkedList([4, 2, 1, 3])));
+console.log(sortList(arrayToLinkedList([-1, 5, 3, 4, 0])));
+console.log(sortList(arrayToLinkedList([])));

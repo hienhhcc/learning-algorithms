@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function addTwoNumbers(
   l1: ListNode | null,
@@ -48,6 +48,10 @@ function addTwoNumbers(
   return prev;
 }
 
-console.log(addTwoNumbers(arrayToList([7, 2, 4, 3]), arrayToList([5, 6, 4])));
-console.log(addTwoNumbers(arrayToList([2, 4, 3]), arrayToList([5, 6, 4])));
-console.log(addTwoNumbers(arrayToList([0]), arrayToList([0])));
+console.log(
+  addTwoNumbers(arrayToLinkedList([7, 2, 4, 3]), arrayToLinkedList([5, 6, 4]))
+);
+console.log(
+  addTwoNumbers(arrayToLinkedList([2, 4, 3]), arrayToLinkedList([5, 6, 4]))
+);
+console.log(addTwoNumbers(arrayToLinkedList([0]), arrayToLinkedList([0])));

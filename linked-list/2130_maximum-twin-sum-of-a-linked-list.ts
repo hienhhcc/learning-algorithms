@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function pairSum(head: ListNode | null): number {
   //Find the middle
@@ -31,6 +31,6 @@ function pairSum(head: ListNode | null): number {
   return maxPairSum;
 }
 
-console.log(pairSum(arrayToList([5, 4, 2, 1])));
-console.log(pairSum(arrayToList([4, 2, 2, 3])));
-console.log(pairSum(arrayToList([1, 100000])));
+console.log(pairSum(arrayToLinkedList([5, 4, 2, 1])));
+console.log(pairSum(arrayToLinkedList([4, 2, 2, 3])));
+console.log(pairSum(arrayToLinkedList([1, 100000])));

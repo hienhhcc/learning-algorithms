@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function reorderList(head: ListNode | null): void {
   //* Find the middle
@@ -32,10 +32,10 @@ function reorderList(head: ListNode | null): void {
   }
 }
 
-const head1 = arrayToList([1, 2, 3, 4]);
+const head1 = arrayToLinkedList([1, 2, 3, 4]);
 reorderList(head1);
 console.log(head1);
 
-const head2 = arrayToList([1, 2, 3, 4, 5]);
+const head2 = arrayToLinkedList([1, 2, 3, 4, 5]);
 reorderList(head2);
 console.log(head2);

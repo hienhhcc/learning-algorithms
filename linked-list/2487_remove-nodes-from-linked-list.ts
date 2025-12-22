@@ -1,4 +1,4 @@
-import { arrayToList, ListNode, printLinkedList } from "./utils";
+import { arrayToLinkedList, ListNode, printLinkedList } from "./utils";
 
 function removeNodes(head: ListNode | null): ListNode | null {
   const stack: number[] = [];
@@ -22,5 +22,5 @@ function removeNodes(head: ListNode | null): ListNode | null {
   return dummy.next;
 }
 
-printLinkedList(removeNodes(arrayToList([5, 12, 13, 3, 8])));
-printLinkedList(removeNodes(arrayToList([1, 1, 1, 1])));
+printLinkedList(removeNodes(arrayToLinkedList([5, 12, 13, 3, 8])));
+printLinkedList(removeNodes(arrayToLinkedList([1, 1, 1, 1])));

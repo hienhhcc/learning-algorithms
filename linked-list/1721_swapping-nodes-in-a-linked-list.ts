@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function swapNodes(head: ListNode | null, k: number): ListNode | null {
   //Calculate the length of the linked list
@@ -32,6 +32,6 @@ function swapNodes(head: ListNode | null, k: number): ListNode | null {
   return dummy.next;
 }
 
-console.log(swapNodes(arrayToList([1]), 1));
+console.log(swapNodes(arrayToLinkedList([1]), 1));
 // console.log(swapNodes(arrayToList([1, 2, 3, 4, 5]), 2));
 // console.log(swapNodes(arrayToList([7, 9, 6, 6, 7, 8, 3, 0, 9, 5]), 5));

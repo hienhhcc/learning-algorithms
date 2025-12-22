@@ -1,6 +1,6 @@
 //* Convert to array then do palindrome on array
 
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 // O(n) time, O(n) space
 function isPalindromeV1(head: ListNode | null): boolean {
@@ -59,5 +59,5 @@ function isPalindromeV2(head: ListNode | null): boolean {
   return true;
 }
 
-console.log(isPalindromeV1(arrayToList([1, 2, 2, 1]))); //true
-console.log(isPalindromeV1(arrayToList([1, 2]))); //false
+console.log(isPalindromeV1(arrayToLinkedList([1, 2, 2, 1]))); //true
+console.log(isPalindromeV1(arrayToLinkedList([1, 2]))); //false

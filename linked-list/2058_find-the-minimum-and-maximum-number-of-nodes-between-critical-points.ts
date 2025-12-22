@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function nodesBetweenCriticalPoints(head: ListNode | null): number[] {
   const criticalPoints: number[] = [];
@@ -36,11 +36,13 @@ function nodesBetweenCriticalPoints(head: ListNode | null): number[] {
   return [minDistance, maxDistance];
 }
 
-console.log(nodesBetweenCriticalPoints(arrayToList([3, 1])));
-console.log(nodesBetweenCriticalPoints(arrayToList([5, 3, 1, 2, 5, 1, 2])));
+console.log(nodesBetweenCriticalPoints(arrayToLinkedList([3, 1])));
 console.log(
-  nodesBetweenCriticalPoints(arrayToList([1, 3, 2, 2, 3, 2, 2, 2, 7]))
+  nodesBetweenCriticalPoints(arrayToLinkedList([5, 3, 1, 2, 5, 1, 2]))
 );
 console.log(
-  nodesBetweenCriticalPoints(arrayToList([6, 8, 4, 1, 9, 6, 6, 10, 6]))
+  nodesBetweenCriticalPoints(arrayToLinkedList([1, 3, 2, 2, 3, 2, 2, 2, 7]))
+);
+console.log(
+  nodesBetweenCriticalPoints(arrayToLinkedList([6, 8, 4, 1, 9, 6, 6, 10, 6]))
 );

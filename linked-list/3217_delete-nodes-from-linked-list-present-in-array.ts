@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function modifiedList(nums: number[], head: ListNode | null): ListNode | null {
   const hashSet = new Set();
@@ -22,6 +22,6 @@ function modifiedList(nums: number[], head: ListNode | null): ListNode | null {
   return dummy.next;
 }
 
-console.log(modifiedList([1, 2, 3], arrayToList([1, 2, 3, 4, 5])));
-console.log(modifiedList([1], arrayToList([1, 2, 1, 2, 1, 2])));
-console.log(modifiedList([5], arrayToList([1, 2, 3, 4])));
+console.log(modifiedList([1, 2, 3], arrayToLinkedList([1, 2, 3, 4, 5])));
+console.log(modifiedList([1], arrayToLinkedList([1, 2, 1, 2, 1, 2])));
+console.log(modifiedList([5], arrayToLinkedList([1, 2, 3, 4])));

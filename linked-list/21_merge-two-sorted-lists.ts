@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function mergeTwoLists(
   list1: ListNode | null,
@@ -28,6 +28,8 @@ function mergeTwoLists(
   return dummy.next;
 }
 
-console.log(mergeTwoLists(arrayToList([1, 2, 4]), arrayToList([1, 3, 4])));
-console.log(mergeTwoLists(arrayToList([]), arrayToList([])));
-console.log(mergeTwoLists(arrayToList([]), arrayToList([0])));
+console.log(
+  mergeTwoLists(arrayToLinkedList([1, 2, 4]), arrayToLinkedList([1, 3, 4]))
+);
+console.log(mergeTwoLists(arrayToLinkedList([]), arrayToLinkedList([])));
+console.log(mergeTwoLists(arrayToLinkedList([]), arrayToLinkedList([0])));

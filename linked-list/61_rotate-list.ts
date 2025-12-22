@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function rotateRight(head: ListNode | null, k: number): ListNode | null {
   const nums: number[] = [];
@@ -26,5 +26,5 @@ function rotateRight(head: ListNode | null, k: number): ListNode | null {
   return dummy.next;
 }
 
-console.log(rotateRight(arrayToList([1, 2, 3, 4, 5]), 2));
-console.log(rotateRight(arrayToList([0, 1, 2]), 4));
+console.log(rotateRight(arrayToLinkedList([1, 2, 3, 4, 5]), 2));
+console.log(rotateRight(arrayToLinkedList([0, 1, 2]), 4));

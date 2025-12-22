@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function insertionSortList(head: ListNode | null): ListNode | null {
   let arr: number[] = [];
@@ -34,4 +34,4 @@ function insertionSort(arr: number[]): number[] {
   return arr;
 }
 
-console.log(insertionSortList(arrayToList([4, 2, 1, 3])));
+console.log(insertionSortList(arrayToLinkedList([4, 2, 1, 3])));

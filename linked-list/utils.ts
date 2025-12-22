@@ -7,7 +7,7 @@ export class ListNode {
   }
 }
 
-export function arrayToList(arr: number[]): ListNode | null {
+export function arrayToLinkedList(arr: number[]): ListNode | null {
   if (arr.length === 0) return null;
 
   const dummy = new ListNode(0); // dummy head to simplify

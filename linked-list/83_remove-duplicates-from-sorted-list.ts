@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   const dummy = head;
@@ -17,5 +17,5 @@ function deleteDuplicates(head: ListNode | null): ListNode | null {
   return dummy;
 }
 
-console.log(deleteDuplicates(arrayToList([1, 1, 2])));
-console.log(deleteDuplicates(arrayToList([1, 1, 2, 3, 3])));
+console.log(deleteDuplicates(arrayToLinkedList([1, 1, 2])));
+console.log(deleteDuplicates(arrayToLinkedList([1, 1, 2, 3, 3])));

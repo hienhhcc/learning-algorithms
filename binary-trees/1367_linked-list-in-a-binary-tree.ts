@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "../linked-list/utils";
+import { arrayToLinkedList, ListNode } from "../linked-list/utils";
 import { arrayToTree, TreeNode } from "./utils";
 
 function isSubPath(head: ListNode | null, root: TreeNode | null): boolean {
@@ -17,7 +17,7 @@ function helper(head: ListNode | null, root: TreeNode | null): boolean {
 
 console.log(
   isSubPath(
-    arrayToList([1, 4, 2, 6, 8]),
+    arrayToLinkedList([1, 4, 2, 6, 8]),
     arrayToTree([
       1,
       4,
@@ -41,7 +41,7 @@ console.log(
 );
 console.log(
   isSubPath(
-    arrayToList([1, 4, 2, 6]),
+    arrayToLinkedList([1, 4, 2, 6]),
     arrayToTree([
       1,
       4,
@@ -65,7 +65,7 @@ console.log(
 );
 console.log(
   isSubPath(
-    arrayToList([4, 2, 8]),
+    arrayToLinkedList([4, 2, 8]),
     arrayToTree([
       1,
       4,

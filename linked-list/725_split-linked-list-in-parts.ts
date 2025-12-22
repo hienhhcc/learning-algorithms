@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function splitListToParts(
   head: ListNode | null,
@@ -47,6 +47,8 @@ function splitListToParts(
   return result;
 }
 
-console.log(splitListToParts(arrayToList([1, 2, 3]), 5));
-console.log(splitListToParts(arrayToList([0, 1, 2, 3, 4]), 4));
-console.log(splitListToParts(arrayToList([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 3));
+console.log(splitListToParts(arrayToLinkedList([1, 2, 3]), 5));
+console.log(splitListToParts(arrayToLinkedList([0, 1, 2, 3, 4]), 4));
+console.log(
+  splitListToParts(arrayToLinkedList([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 3)
+);

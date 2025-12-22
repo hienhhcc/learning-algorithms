@@ -1,4 +1,4 @@
-import { arrayToList, ListNode, printLinkedList } from "./utils";
+import { arrayToLinkedList, ListNode, printLinkedList } from "./utils";
 
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
   //Find the length of listnode
@@ -28,6 +28,6 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
   return dummy.next;
 }
 
-printLinkedList(removeNthFromEnd(arrayToList([1, 2, 3, 4, 5]), 2));
-printLinkedList(removeNthFromEnd(arrayToList([1]), 1));
-printLinkedList(removeNthFromEnd(arrayToList([1, 2]), 1));
+printLinkedList(removeNthFromEnd(arrayToLinkedList([1, 2, 3, 4, 5]), 2));
+printLinkedList(removeNthFromEnd(arrayToLinkedList([1]), 1));
+printLinkedList(removeNthFromEnd(arrayToLinkedList([1, 2]), 1));

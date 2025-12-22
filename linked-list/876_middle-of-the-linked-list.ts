@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function middleNode(head: ListNode | null): ListNode | null {
   let slow = head,
@@ -12,5 +12,5 @@ function middleNode(head: ListNode | null): ListNode | null {
   return slow;
 }
 
-console.log(middleNode(arrayToList([1, 2, 3, 4, 5])));
-console.log(middleNode(arrayToList([1, 2, 3, 4, 5, 6])));
+console.log(middleNode(arrayToLinkedList([1, 2, 3, 4, 5])));
+console.log(middleNode(arrayToLinkedList([1, 2, 3, 4, 5, 6])));

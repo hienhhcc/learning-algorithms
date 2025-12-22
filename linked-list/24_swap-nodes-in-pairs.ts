@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "./utils";
+import { arrayToLinkedList, ListNode } from "./utils";
 
 function swapPairs(head: ListNode | null): ListNode | null {
   let dummy = new ListNode(0, head);
@@ -20,7 +20,7 @@ function swapPairs(head: ListNode | null): ListNode | null {
   return dummy.next;
 }
 
-console.log(swapPairs(arrayToList([1, 2, 3, 4])));
-console.log(swapPairs(arrayToList([])));
-console.log(swapPairs(arrayToList([1])));
-console.log(swapPairs(arrayToList([1, 2, 3])));
+console.log(swapPairs(arrayToLinkedList([1, 2, 3, 4])));
+console.log(swapPairs(arrayToLinkedList([])));
+console.log(swapPairs(arrayToLinkedList([1])));
+console.log(swapPairs(arrayToLinkedList([1, 2, 3])));

@@ -1,4 +1,8 @@
-import { arrayToList, ListNode, printLinkedList } from "../linked-list/utils";
+import {
+  arrayToLinkedList,
+  ListNode,
+  printLinkedList,
+} from "../linked-list/utils";
 
 function mergeTwoLists(
   list1: ListNode | null,
@@ -33,7 +37,11 @@ function mergeTwoLists(
   return dummy.next;
 }
 
-printLinkedList(mergeTwoLists(arrayToList([-9, 3]), arrayToList([5, 7])));
-printLinkedList(mergeTwoLists(arrayToList([1, 2, 4]), arrayToList([1, 3, 4])));
-printLinkedList(mergeTwoLists(arrayToList([]), arrayToList([])));
-printLinkedList(mergeTwoLists(arrayToList([]), arrayToList([0])));
+printLinkedList(
+  mergeTwoLists(arrayToLinkedList([-9, 3]), arrayToLinkedList([5, 7]))
+);
+printLinkedList(
+  mergeTwoLists(arrayToLinkedList([1, 2, 4]), arrayToLinkedList([1, 3, 4]))
+);
+printLinkedList(mergeTwoLists(arrayToLinkedList([]), arrayToLinkedList([])));
+printLinkedList(mergeTwoLists(arrayToLinkedList([]), arrayToLinkedList([0])));

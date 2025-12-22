@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "../linked-list/utils";
+import { arrayToLinkedList, ListNode } from "../linked-list/utils";
 
 function reverseList(head: ListNode | null): ListNode | null {
   let prev: ListNode | null = null;
@@ -14,6 +14,6 @@ function reverseList(head: ListNode | null): ListNode | null {
   return prev;
 }
 
-console.log(reverseList(arrayToList([1, 2, 3, 4, 5])));
-console.log(reverseList(arrayToList([1, 2])));
-console.log(reverseList(arrayToList([])));
+console.log(reverseList(arrayToLinkedList([1, 2, 3, 4, 5])));
+console.log(reverseList(arrayToLinkedList([1, 2])));
+console.log(reverseList(arrayToLinkedList([])));

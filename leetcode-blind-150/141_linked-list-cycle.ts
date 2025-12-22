@@ -1,4 +1,4 @@
-import { arrayToList, ListNode } from "../linked-list/utils";
+import { arrayToLinkedList, ListNode } from "../linked-list/utils";
 
 function hasCycle(head: ListNode | null): boolean {
   let slow: ListNode | null = head;
